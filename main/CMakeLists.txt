@@ -1,0 +1,36 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "wifi_manager.c"
+        "http_client.c"
+        "microphone.c"
+        "stt_client.c"
+        "audio_processor.c"
+        "camera.c"
+        "display.c"
+        "alert_recorder.c"
+        "benchmark.c"
+        "model_data.c"
+        "kws_engine.cc"
+
+    INCLUDE_DIRS
+        "."
+
+    REQUIRES
+        nvs_flash
+        esp_wifi
+        esp_wifi_remote
+        esp_event
+        esp_netif
+        esp_http_client
+        esp_codec_dev
+        esp-dsp
+        esp-tflite-micro
+        esp_driver_i2s
+        esp_driver_i2c
+        esp_driver_ppa
+        esp_driver_jpeg
+        esp_timer
+        esp_video
+        espressif__esp32_p4_function_ev_board
+)
